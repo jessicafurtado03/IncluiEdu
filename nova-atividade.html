@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>IncluiEdu | Nova atividade</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <a href="index.html" class="logo">
+        <span>Inclui</span>Edu
+    </a>
+
+    <a href="atividades.html">
+        ← Voltar
+    </a>
+
+</header>
+
+
+<main class="form-page">
+
+    <section class="dashboard-card">
+
+        <span>
+            NOVA ATIVIDADE
+        </span>
+
+        <h1>
+            Criar atividade
+        </h1>
+
+        <p>
+            Cadastre a atividade original antes
+            de realizar adaptações.
+        </p>
+
+
+        <form id="formAtividade"
+            class="form-grid">
+
+
+            <div class="form-full">
+
+                <label>
+                    Título da atividade
+                </label>
+
+                <input
+                    type="text"
+                    id="tituloAtividade"
+                    placeholder="Ex.: Atividade de Matemática"
+                    required
+                >
+
+            </div>
+
+
+            <div>
+
+                <label>
+                    Disciplina
+                </label>
+
+                <input
+                    type="text"
+                    id="disciplinaAtividade"
+                    placeholder="Matemática"
+                    required
+                >
+
+            </div>
+
+
+            <div>
+
+                <label>
+                    Ano/Turma
+                </label>
+
+                <input
+                    type="text"
+                    id="turmaAtividade"
+                    placeholder="5º Ano A"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-full">
+
+                <label>
+                    Objetivo da atividade
+                </label>
+
+                <textarea
+                    id="objetivoAtividade"
+                    rows="3"
+                    placeholder="O que o aluno deverá aprender?">
+                </textarea>
+
+            </div>
+
+
+            <div class="form-full">
+
+                <label>
+                    Conteúdo da atividade
+                </label>
+
+                <textarea
+                    id="conteudoAtividade"
+                    rows="8"
+                    placeholder="Digite aqui a atividade original..."
+                    required>
+                </textarea>
+
+            </div>
+
+
+            <div class="form-full">
+
+                <button class="btn"
+                    type="submit">
+
+                    Salvar atividade
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>IncluiEdu | Adaptar atividade</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <a href="index.html" class="logo">
+        <span>Inclui</span>Edu
+    </a>
+
+    <a href="atividades.html">
+        ← Atividades
+    </a>
+
+</header>
+
+
+<main class="form-page">
+
+<section class="dashboard-card">
+
+    <span>
+        ADAPTAÇÃO PEDAGÓGICA
+    </span>
+
+    <h1>
+        Adaptar atividade
+    </h1>
+
+    <p>
+        Selecione uma atividade e um aluno para
+        receber sugestões de adaptação.
+    </p>
+
+
+    <form id="formAdaptacao">
+
+        <label>
+            Atividade
+        </label>
+
+        <select id="atividadeSelecionada"
+            required>
+        </select>
+
+
+        <label>
+            Aluno
+        </label>
+
+        <select id="alunoSelecionado"
+            required>
+        </select>
+
+
+        <button class="btn"
+            type="submit">
+
+            Gerar sugestões
+
+        </button>
+
+    </form>
+
+</section>
+
+
+<section id="resultadoAdaptacao"
+    class="dashboard-card"
+    style="display:none;">
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

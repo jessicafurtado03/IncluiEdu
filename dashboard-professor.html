@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>IncluiEdu | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <a href="index.html" class="logo">
+        <span>Inclui</span>Edu
+    </a>
+
+    <div class="usuario-menu">
+
+        <span id="nomeProfessor">
+            Professor
+        </span>
+
+        <button onclick="sair()">
+            Sair
+        </button>
+
+    </div>
+
+</header>
+
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <a class="ativo"
+            href="dashboard-professor.html">
+            🏠 Dashboard
+        </a>
+
+        <a href="alunos.html">
+            👨‍🎓 Alunos
+        </a>
+
+        <a href="atividades.html">
+            📝 Atividades
+        </a>
+
+        <a href="adaptar-atividade.html">
+            🧩 Adaptações
+        </a>
+
+        <a href="resultados.html">
+            📊 Resultados
+        </a>
+
+    </aside>
+
+
+    <main class="dashboard-content">
+
+        <div class="dashboard-title">
+
+            <div>
+
+                <span>
+                    VISÃO GERAL
+                </span>
+
+                <h1>
+                    Olá, professor! 👋
+                </h1>
+
+                <p>
+                    Veja o que está acontecendo
+                    com suas turmas.
+                </p>
+
+            </div>
+
+            <a class="btn"
+                href="nova-atividade.html">
+                + Nova atividade
+            </a>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <span>👨‍🎓</span>
+
+                <div>
+                    <small>Alunos</small>
+                    <strong id="totalAlunos">
+                        0
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>📝</span>
+
+                <div>
+                    <small>Atividades</small>
+                    <strong id="totalAtividades">
+                        0
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>🧩</span>
+
+                <div>
+                    <small>Adaptações</small>
+                    <strong id="totalAdaptacoes">
+                        0
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>📊</span>
+
+                <div>
+                    <small>Resultados</small>
+                    <strong id="totalResultados">
+                        0
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-grid">
+
+            <section class="dashboard-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Ações rápidas
+                    </h2>
+
+                </div>
+
+                <div class="quick-actions">
+
+                    <a href="alunos.html">
+                        👨‍🎓
+                        <span>
+                            Cadastrar aluno
+                        </span>
+                    </a>
+
+                    <a href="nova-atividade.html">
+                        📝
+                        <span>
+                            Criar atividade
+                        </span>
+                    </a>
+
+                    <a href="adaptar-atividade.html">
+                        🧩
+                        <span>
+                            Adaptar atividade
+                        </span>
+                    </a>
+
+                    <a href="resultados.html">
+                        📊
+                        <span>
+                            Registrar resultado
+                        </span>
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <section class="dashboard-card">
+
+                <div class="card-header">
+
+                    <h2>
+                        Últimas atividades
+                    </h2>
+
+                    <a href="atividades.html">
+                        Ver todas
+                    </a>
+
+                </div>
+
+                <div id="ultimasAtividades">
+
+                    <p class="empty">
+                        Nenhuma atividade cadastrada.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

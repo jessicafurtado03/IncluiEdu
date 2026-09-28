@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>IncluiEdu | Resultados</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="dashboard-header">
+
+    <a href="index.html" class="logo">
+        <span>Inclui</span>Edu
+    </a>
+
+    <a class="btn"
+        href="dashboard-professor.html">
+        Dashboard
+    </a>
+
+</header>
+
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <a href="dashboard-professor.html">
+            🏠 Dashboard
+        </a>
+
+        <a href="alunos.html">
+            👨‍🎓 Alunos
+        </a>
+
+        <a href="atividades.html">
+            📝 Atividades
+        </a>
+
+        <a href="adaptar-atividade.html">
+            🧩 Adaptações
+        </a>
+
+        <a class="ativo"
+            href="resultados.html">
+            📊 Resultados
+        </a>
+
+    </aside>
+
+
+    <main class="dashboard-content">
+
+        <div class="dashboard-title">
+
+            <div>
+
+                <span>ACOMPANHAMENTO</span>
+
+                <h1>
+                    Resultados
+                </h1>
+
+                <p>
+                    Registre e acompanhe o desempenho
+                    dos alunos.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <section class="dashboard-card">
+
+            <h2>
+                Registrar resultado
+            </h2>
+
+
+            <form id="formResultado"
+                class="form-grid">
+
+                <div>
+
+                    <label>
+                        Aluno
+                    </label>
+
+                    <select id="resultadoAluno"
+                        required>
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label>
+                        Atividade
+                    </label>
+
+                    <select id="resultadoAtividade"
+                        required>
+                    </select>
+
+                </div>
+
+
+                <div class="form-full">
+
+                    <label>
+                        Resultado
+                    </label>
+
+                    <select id="resultadoNivel">
+
+                        <option value="independente">
+                            🟢 Concluiu sozinho
+                        </option>
+
+                        <option value="auxilio">
+                            🟡 Concluiu com auxílio
+                        </option>
+
+                        <option value="nao-concluiu">
+                            🔴 Não conseguiu concluir
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-full">
+
+                    <label>
+                        Observação
+                    </label>
+
+                    <textarea
+                        id="resultadoObservacao"
+                        rows="5"
+                        placeholder="Registre suas observações...">
+                    </textarea>
+
+                </div>
+
+
+                <div class="form-full">
+
+                    <button class="btn"
+                        type="submit">
+
+                        Salvar resultado
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <section class="dashboard-card">
+
+            <h2>
+                Histórico
+            </h2>
+
+            <div id="listaResultados">
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
